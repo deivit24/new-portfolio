@@ -111,19 +111,24 @@
       // slide in from top
       transform: translate3d(0, 0, 0);
     }
+
+    &.current > a {
+      color: $first-color;
+    }
   }
 
-  .nav-item a{
-    color: $primary-color;
-    margin-bottom: 30px;
-    font-family: 'Lato';
-    font-size: 2rem;
+  .nav-link{
+    display: inline-block;
+    position: relative;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding: 1rem 0;
+    color: #fff;
+    text-decoration: none;
+    @include easeOut;
 
     &:hover{
       color: $first-color;
-      font-weight: bold;
-      @include easeOut;
-     
     }
   }
 
