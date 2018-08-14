@@ -35,6 +35,15 @@ $shadow: 0px 4px 3px rgba(0,0,0,0.4),
   }
 }
 
+// set text colors
+
+@function set-text-color($color) {
+  @if (lightness($color) > 40){
+   @return #000;
+  } @else {
+    @return #fff;
+  }
+}
 // media query mixin
 
 @mixin mediaSm {
