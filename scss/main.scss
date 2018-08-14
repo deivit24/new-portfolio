@@ -12,6 +12,7 @@ body{
   margin: 0;
   font-family: $main-font;
   line-height: 1.5;
+  z-index: 4;
 }
 
 // headings
@@ -29,7 +30,10 @@ h1, h2, h3 {
     padding: 0.2rem 1 rem;
     background: (lighten($primary-color, 2), 0.5);
   }
+
+  
 }
+
 
 a{
   color: #fff;
@@ -39,24 +43,30 @@ a{
 header{
   position: fixed;
   z-index: 2;
+  width: 100%;
+  height: 20%;
 }
 .text-secondary{
   color: $first-color;
+
 }
 
 main{
   padding: 4rem;
   height: 100%;
+  
 
   .icons {
     margin-top: 1rem;
 
     a{
       padding: 0.4rem;
+      color: #fff;
+      z-index: 3;  
 
       &:hover{
         color: $first-color;
-        @include easeOut();
+        @include easeOut;
       }
     }
   }
@@ -68,3 +78,4 @@ main{
     }
   }
 }
+
