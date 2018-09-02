@@ -171,6 +171,11 @@ main {
     border: 2px solid #14a76c; }
   .about-info .bio {
     grid-area: bio; }
+    .about-info .bio p {
+      color: white;
+      font-size: 1.5rem; }
+      .about-info .bio p .name {
+        color: #ff652f; }
   .about-info .job-1 {
     grid-area: job1; }
   .about-info .job-2 {

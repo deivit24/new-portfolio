@@ -103,6 +103,15 @@ main{
   
   .bio {
     grid-area: bio;
+
+    p {
+      color:white;
+      font-size: 1.5rem;
+
+      .name {
+        color:$third-color;
+      }
+    }
   }
   
   .job-1 {
