@@ -90,7 +90,8 @@ main{
   grid-gap: 30px;
   grid-template-areas: 
   'bioimage bio bio'
-  'job1 job2 job3';
+  'job1 job2 job3'
+  'edu1 edu2 edu3';
   grid-template-columns: repeat(3, 1fr);
 
 
@@ -125,11 +126,29 @@ main{
   .job-3 {
     grid-area: job3;
   }
+
+  .edu-1 {
+    grid-area: edu1;
+  }
+  
+  .edu-2 {
+    grid-area: edu2;
+  }
+  
+  .edu-3 {
+    grid-area: edu3;
+  }
   
   .job {
     background: lighten($primary-color, 5);
     padding: 0.5rem;
     border-bottom: $second-color 5px solid;
+  }
+
+  .edu {
+    background: lighten($primary-color, 5);
+    padding: 0.5rem;
+    border-bottom: $third-color 5px solid;
   }
 }
 
