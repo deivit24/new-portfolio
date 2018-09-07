@@ -223,13 +223,169 @@ main {
   color: #fff;
   height: 60px; }
 
+.contact {
+  margin-top: 100px; }
+
+@font-face {
+  font-family: 'Genericons';
+  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/53819/genericons-regular-webfont.eot");
+  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/53819/genericons-regular-webfont.woff") format("woff"), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/53819/genericons-regular-webfont.eot") format("truetype"); }
+
+.accordion {
+  text-align: center;
+  background: #272727;
+  width: 100%;
+  min-width: 800px;
+  display: block;
+  list-style-type: none;
+  overflow: hidden;
+  height: 200px;
+  font-size: 0; }
+
+.tab {
+  display: inline-block;
+  background-color: #444;
+  border-right: #333 1px solid;
+  width: 80px;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  margin: 0;
+  transition: all 0.5s ease-in-out 0.1s; }
+
+.tab:hover {
+  width: 450px; }
+
+.tab:hover .social a:before {
+  margin-left: -100px; }
+
+.tab:hover .social a:after {
+  margin-left: -5px; }
+
+.tab .content {
+  background: #fff;
+  width: 360px;
+  height: 200px;
+  margin-left: 80px;
+  padding: 50px 0 0 15px;
+  position: relative; }
+
+.tab .content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: black; }
+
+.tab .content p {
+  font-size: 0.85rem;
+  line-height: 1.4rem;
+  padding-right: 30px;
+  color: black; }
+
+.social a:after,
+.social a:before {
+  transition: all 0.4s ease-in-out 0.1s;
+  width: 80px;
+  height: 200px;
+  position: absolute;
+  text-indent: 0;
+  padding-top: 90px;
+  padding-left: 25px;
+  display: block;
+  font: normal 30px Genericons;
+  color: #fff; }
+
+.social a:after {
+  font-size: 48px;
+  padding-left: 20px;
+  padding-top: 80px;
+  margin-left: 85px; }
+
+.mail a:before,
+.mail a:after {
+  content: '\f410'; }
+
+.mail a:after {
+  background-color: #0072c6; }
+
+.phone a:before,
+.phone a:after {
+  content: '\f437'; }
+
+.phone a:after {
+  background-color: #ffe100; }
+
+.facebook a:before,
+.facebook a:after {
+  content: '\f204'; }
+
+.facebook a:after {
+  background-color: #3b5998; }
+
+.linkedin a:before,
+.linkedin a:after {
+  content: '\f208'; }
+
+.linkedin a:after {
+  background-color: #00a9cd; }
+
+.instagram a:before,
+.instagram a:after {
+  content: '\f215'; }
+
+.instagram a:after {
+  background-color: #6dc993; }
+
+.github a:before,
+.github a:after {
+  content: '\f200'; }
+
+.github a:after {
+  background-color: #6e5494; }
+
 @media screen and (min-width: 1171px) {
   .projects {
     grid-template-columns: repeat(4, 1fr); } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .projects {
-    grid-template-columns: repeat(3, 1fr); } }
+    grid-template-columns: repeat(3, 1fr); }
+  .container {
+    width: 70%; }
+  .tab {
+    display: block;
+    width: 100%;
+    border-bottom: 3px #333 solid; }
+  .accordion {
+    display: block;
+    min-width: 450px;
+    height: auto; }
+  .tab .content {
+    width: 85%; }
+  .tab:hover {
+    width: 100%; } }
+
+@media screen and (max-width: 500px) {
+  main#home h1 {
+    margin-top: 10vh; }
+  .projects {
+    grid-template-columns: 1fr; }
+  .container {
+    width: 70%;
+    margin-left: -20px; }
+  .tab {
+    display: block;
+    width: 70%;
+    border-bottom: 3px #333 solid; }
+  .accordion {
+    display: block;
+    min-width: 400px;
+    height: auto; }
+  .tab .content {
+    width: 100%; }
+    .tab .content h1 {
+      font-size: 20px; }
+  .tab:hover {
+    width: 90%; } }
 
 @media screen and (max-width: 768px) {
   main {
@@ -261,10 +417,42 @@ main {
     grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
     grid-template-columns: 1fr; }
   .projects {
-    grid-template-columns: repeat(2, 1fr); } }
+    grid-template-columns: repeat(2, 1fr); }
+  .container {
+    width: 70%;
+    margin-left: -20px; }
+  .tab {
+    display: block;
+    width: 100%;
+    border-bottom: 3px #333 solid; }
+  .accordion {
+    display: block;
+    min-width: 450px;
+    height: auto; }
+  .tab .content {
+    width: 85%; }
+  .tab:hover {
+    width: 100%; } }
 
 @media screen and (max-width: 500px) {
   main#home h1 {
     margin-top: 10vh; }
   .projects {
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+  .container {
+    width: 70%;
+    margin-left: -20px; }
+  .tab {
+    display: block;
+    width: 70%;
+    border-bottom: 3px #333 solid; }
+  .accordion {
+    display: block;
+    min-width: 350px;
+    height: auto; }
+  .tab .content {
+    width: 70%; }
+    .tab .content h1 {
+      font-size: 20px; }
+  .tab:hover {
+    width: 70%; } }
