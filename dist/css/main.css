@@ -91,6 +91,9 @@
 .nav-item:nth-child(4) {
   transition-delay: 0.4s; }
 
+.nav-item:nth-child(5) {
+  transition-delay: 0.5s; }
+
 * {
   box-sizing: border-box; }
 
@@ -352,6 +355,40 @@ main {
 .github a:after {
   background-color: #6e5494; }
 
+.tools {
+  background: #f4f4f4;
+  box-shadow: 8px 8px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  padding: 20px 0; }
+  .tools i {
+    font-size: 100px; }
+  .tools h1 {
+    color: #000;
+    margin: 50px 0; }
+  .tools .keep {
+    text-align: center;
+    margin: 25px 0;
+    font-family: 'kirang haerang';
+    color: #14a76c; }
+
+.learning {
+  background: #fff;
+  box-shadow: 8px 8px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  padding: 20px 20px;
+  width: 100%; }
+  .learning i {
+    font-size: 100px; }
+  .learning h1 {
+    color: #000;
+    margin: 50px 0; }
+  .learning .fa-spinner {
+    color: #14a76c; }
+  .learning .progress {
+    margin: 40px 20px; }
+    .learning .progress .progress-bar {
+      background-color: #14a76c; }
+
 @media screen and (min-width: 1171px) {
   .projects {
     grid-template-columns: repeat(4, 1fr); } }
@@ -447,6 +484,17 @@ main {
 @media screen and (max-width: 500px) {
   main#home h1 {
     margin-top: 10vh; }
+  h1, h2, h3 {
+    margin: 0;
+    font-weight: 400; }
+    h1.lg-heading, h2.lg-heading, h3.lg-heading {
+      font-size: 4rem;
+      text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1); }
+    h1.sm-heading, h2.sm-heading, h3.sm-heading {
+      margin-bottom: 2rem;
+      padding: 0.2rem 1 rem;
+      background: #2c2c2c, 0.5;
+      font-size: 1rem; }
   .projects {
     grid-template-columns: 1fr; }
   .container {

@@ -167,6 +167,25 @@
     margin-top: 10vh;
   }
 
+  h1, h2, h3 {
+    margin: 0; 
+    font-weight: 400;
+  
+    &.lg-heading{
+      font-size: 4rem;
+      text-shadow: $shadow;
+    }
+  
+    &.sm-heading{
+      margin-bottom: 2rem;
+      padding: 0.2rem 1 rem;
+      background: (lighten($primary-color, 2), 0.5);
+      font-size: 1rem;
+    }
+  
+    
+  }
+
   .projects {
     grid-template-columns: 1fr;
   }
